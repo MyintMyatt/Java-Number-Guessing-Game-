@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="682.0" prefWidth="625.0" stylesheets="@home.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.guessingnumber.HomePage">
+    <children>
+        <Label layoutX="118.0" layoutY="127.0" prefHeight="41.0" prefWidth="322.0" text="Enter Guessing Number Range -" />
+        <Label fx:id="heading" alignment="CENTER" contentDisplay="CENTER" layoutX="85.0" layoutY="22.0" prefHeight="72.0" prefWidth="443.0" text="Guessing Number Game">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Button layoutX="174.0" layoutY="424.0" mnemonicParsing="false" onAction="#startbtnAction" prefHeight="58.0" prefWidth="266.0" text="Start" />
+        <Button layoutX="174.0" layoutY="538.0" mnemonicParsing="false" onAction="#exitbtnAction" prefHeight="58.0" prefWidth="266.0" text="Exit" />
+        <TextField fx:id="start" layoutX="146.0" layoutY="199.0" prefHeight="50.0" prefWidth="144.0" />
+        <TextField fx:id="end" layoutX="340.0" layoutY="199.0" prefHeight="50.0" prefWidth="144.0" />
+        <Text layoutX="311.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" wrappingWidth="20.69091796875">
+            <font>
+                <Font size="44.0" />
+            </font>
+        </Text>
+        <Label layoutX="118.0" layoutY="300.0" prefHeight="41.0" prefWidth="283.0" text="Number of Times to Guess -" />
+        <Spinner fx:id="spinner" layoutX="399.0" layoutY="300.0" onMouseClicked="#spinnerAction" prefHeight="41.0" prefWidth="83.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Spinner>
+    </children>
+</AnchorPane>
