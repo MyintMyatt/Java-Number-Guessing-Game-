@@ -1,0 +1,36 @@
+
+.label{
+    -fx-font-size : 19px;
+    -fx-font-weight : bold;
+    -fx-font-family : monospace;
+}
+#random_label,#output_label{
+       -fx-font-size : 19px;
+       -fx-font-weight : bold;
+}
+#label1{
+    -fx-text-fill : green;
+}
+.button{
+        -fx-effect:dropshadow(one-pass-box,black,8,0.0,2,0);
+        -fx-font-size : 18px;
+}
+#home,#restart{
+    -fx-background-color : #002535;
+    -fx-text-fill : #fff;
+}
+#clear , #ok{
+    -fx-background-color : red;
+    -fx-text-fill : #fff;
+}
+#guess_tField{
+    -fx-font-size : 25px;
+    -fx-font-weight : bold;
+    -fx-text-fill : blue;
+    -fx-cursor : TEXT;
+}
+#pane,#pane1,#shake_pane,#guess_tField{
+    -fx-effect:dropshadow(one-pass-box,#002535,10,0.0,2,0);
+    -fx-background-color:#fff;
+    -fx-background-radius:20px;
+}
